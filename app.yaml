@@ -1,4 +1,4 @@
-runtime: python27
+runtime: python37
 api_version: 1
 threadsafe: true
 
@@ -11,11 +11,3 @@ handlers:
   script: oauth2client.appengine.application
 - url: /.*
   script: main.app
-
-libraries:
-- name: webapp2
-  version: latest
-- name: jinja2
-  version: latest
-- name: pycrypto
-  version: "2.6"
